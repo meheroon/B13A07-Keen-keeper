@@ -4,6 +4,17 @@
 
 :root {
   color-scheme: light;
+  --bg: #f3f4f6;
+  --surface: #ffffff;
+  --border: #e5e7eb;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --brand: #255845;
+  --brand-dark: #214b3b;
+  --brand-soft: #dff3e8;
+  --danger: #ef4444;
+  --warning: #f4b544;
+  --success: #255845;
 }
 
 * {
@@ -17,10 +28,9 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background:
-    radial-gradient(circle at top left, rgba(124, 58, 237, 0.10), transparent 28%),
-    linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
-  color: #0f172a;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -34,9 +44,17 @@ img {
 }
 
 .container-width {
-  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
 }
 
 .card-surface {
-  @apply rounded-3xl border border-white/70 bg-white/80 backdrop-blur-sm shadow-soft;
+  @apply rounded-xl border border-gray-200 bg-white shadow-sm;
+}
+
+.page-heading {
+  @apply text-[44px] leading-tight font-extrabold text-slate-800;
+}
+
+.page-subtext {
+  @apply text-base text-slate-500;
 }
