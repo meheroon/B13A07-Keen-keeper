@@ -1,7 +1,6 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import SectionTitle from '@/components/shared/SectionTitle';
 import TimelineFilter from '@/components/timeline/TimelineFilter';
 import TimelineList from '@/components/timeline/TimelineList';
 import { getFilteredEntries } from '@/lib/timelineStorage';
@@ -15,13 +14,8 @@ export default function TimelinePage() {
   }, [filter]);
 
   return (
-    <div className="container-width py-8 sm:py-10">
-      <SectionTitle
-        eyebrow="Activity Feed"
-        title="Timeline"
-        description="This is the full history of your logged calls, texts, and video check-ins across all friendships."
-      />
-
+    <div className="container-width py-10">
+      <h1 className="page-heading mb-8">Timeline</h1>
       <TimelineFilter activeFilter={filter} onChange={setFilter} />
       <TimelineList entries={entries} />
     </div>

@@ -1,5 +1,5 @@
 import { FaPhone, FaRegMessage, FaVideo } from 'react-icons/fa6';
-import { formatDateTime } from '@/lib/utils';
+import { formatDate } from '@/lib/utils';
 
 const iconMap = {
   call: FaPhone,

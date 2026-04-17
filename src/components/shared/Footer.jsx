@@ -1,47 +1,39 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { FaFacebookF, FaInstagram, FaXTwitter } from 'react-icons/fa6';
 
 export default function Footer() {
   return (
-    <footer className="mt-20 border-t border-white/70 bg-slate-950 text-slate-200">
-      <div className="container-width grid gap-10 py-12 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
-        <div>
-          <div className="mb-4 flex items-center gap-3">
-            <div className="rounded-2xl bg-white/10 p-2">
-              <Image src="/logo.png" alt="KeenKeeper logo" width={30} height={30} />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-white">KeenKeeper</h3>
-              <p className="text-sm text-slate-400">A simple way to protect meaningful friendships.</p>
-            </div>
-          </div>
-          <p className="max-w-md text-sm leading-7 text-slate-400">
-            Track your conversations, stay consistent with check-ins, and make sure the people that matter most never drift too far away.
-          </p>
+    <footer className="mt-20 bg-[#255845] text-white">
+      <div className="container-width py-20 text-center">
+        <h2 className="text-6xl font-extrabold tracking-tight">KeenKeeper</h2>
+        <p className="mx-auto mt-6 max-w-3xl text-base text-white/80">
+          Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.
+        </p>
+
+        <h3 className="mt-10 text-3xl font-semibold">Social Links</h3>
+
+        <div className="mt-6 flex items-center justify-center gap-4">
+          <a href="#" className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-[#255845]">
+            <FaInstagram />
+          </a>
+          <a href="#" className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-[#255845]">
+            <FaFacebookF />
+          </a>
+          <a href="#" className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-[#255845]">
+            <FaXTwitter />
+          </a>
         </div>
 
-        <div>
-          <h4 className="mb-4 text-lg font-semibold text-white">Quick Links</h4>
-          <div className="space-y-3 text-sm text-slate-400">
-            <Link href="/" className="block hover:text-white">Home</Link>
-            <Link href="/timeline" className="block hover:text-white">Timeline</Link>
-            <Link href="/stats" className="block hover:text-white">Stats</Link>
+        <div className="mt-16 border-t border-white/10 pt-8">
+          <div className="flex flex-col items-center justify-between gap-4 text-sm text-white/70 md:flex-row">
+            <p>© 2026 KeenKeeper. All rights reserved.</p>
+            <div className="flex items-center gap-8">
+              <Link href="#">Privacy Policy</Link>
+              <Link href="#">Terms of Service</Link>
+              <Link href="#">Cookies</Link>
+            </div>
           </div>
         </div>
-
-        <div>
-          <h4 className="mb-4 text-lg font-semibold text-white">Stay Connected</h4>
-          <p className="mb-4 text-sm text-slate-400">Make every reminder feel more human and intentional.</p>
-          <div className="flex items-center gap-3">
-            <a href="#" className="rounded-full border border-white/10 p-3 text-slate-300 transition hover:border-violet-400 hover:text-white"><FaFacebookF /></a>
-            <a href="#" className="rounded-full border border-white/10 p-3 text-slate-300 transition hover:border-violet-400 hover:text-white"><FaInstagram /></a>
-            <a href="#" className="rounded-full border border-white/10 p-3 text-slate-300 transition hover:border-violet-400 hover:text-white"><FaXTwitter /></a>
-          </div>
-        </div>
-      </div>
-      <div className="border-t border-white/10 py-4 text-center text-xs text-slate-500">
-        © 2026 KeenKeeper. All rights reserved.
       </div>
     </footer>
   );
