@@ -35,15 +35,17 @@ export default function FriendCard({ friend }) {
         ))}
       </div>
 
-      <span
-        className={`mt-4 rounded-full border px-3 py-1 text-xs font-semibold capitalize sm:text-sm ${getStatusStyles(friend.status)}`}
-      >
-        {friend.status === 'on-track'
-          ? 'On-Track'
-          : friend.status === 'almost due'
-          ? 'Almost Due'
-          : 'Overdue'}
-      </span>
+      <div className="mt-auto pt-6">
+        <span
+          className={`inline-flex rounded-full border px-3 py-1 text-xs font-semibold capitalize sm:text-sm ${getStatusStyles(friend.status)}`}
+        >
+          {friend.status === 'on-track'
+            ? 'On-Track'
+            : friend.status === 'almost due'
+            ? 'Almost Due'
+            : 'Overdue'}
+        </span>
+      </div>
     </Link>
   );
 }
