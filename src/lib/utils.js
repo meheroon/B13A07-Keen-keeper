@@ -5,11 +5,11 @@ export function cn(...classes) {
 export function getStatusStyles(status) {
   switch (status) {
     case 'overdue':
-      return 'bg-red-100 text-red-700 border-red-200';
+      return 'bg-red-500 text-white border-red-500';
     case 'almost due':
-      return 'bg-amber-100 text-amber-700 border-amber-200';
+      return 'bg-amber-400 text-white border-amber-400';
     default:
-      return 'bg-emerald-100 text-emerald-700 border-emerald-200';
+      return 'bg-[#255845] text-white border-[#255845]';
   }
 }
 
@@ -21,12 +21,10 @@ export function formatDate(dateString) {
   });
 }
 
-export function formatDateTime(dateString) {
-  return new Date(dateString).toLocaleString('en-US', {
+export function formatDateLong(dateString) {
+  return new Date(dateString).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'short',
-    day: 'numeric',
-    hour: 'numeric',
-    minute: '2-digit'
+    day: 'numeric'
   });
 }
