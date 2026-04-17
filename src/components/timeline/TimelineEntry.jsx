@@ -1,20 +1,16 @@
-import { FaPhone, FaRegMessage, FaVideo } from 'react-icons/fa6';
 import { formatDate } from '@/lib/utils';
 
 const iconMap = {
-  call: FaPhone,
-  text: FaRegMessage,
-  video: FaVideo
+  call: '📞',
+  text: '💬',
+  video: '📹',
+  meetup: '🤝'
 };
 
 export default function TimelineEntry({ entry }) {
-  const Icon = iconMap[entry.type] || FaRegMessage;
-
   return (
-    <div className="card-surface flex items-center gap-5 px-5 py-5">
-      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 text-xl text-[#255845]">
-        <Icon />
-      </div>
+   <div className="card-surface flex items-start gap-4 px-5 py-5 sm:items-center">
+      <span className="text-4xl">{iconMap[entry.type] || '💬'}</span>
 
       <div>
         <h3 className="text-xl font-semibold text-[#255845]">

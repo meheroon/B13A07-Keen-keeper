@@ -13,21 +13,21 @@ export default function Footer() {
         <h3 className="mt-10 text-2xl font-semibold sm:text-3xl">Social Links</h3>
 
         <div className="mt-6 flex items-center justify-center gap-4">
-          <a href="#" className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-[#255845]">
-            <FaInstagram />
+          <a href="#" className="flex h-12 w-12 items-center justify-center rounded-full bg-white">
+            <FaInstagram className="text-xl text-[#255845]" />
           </a>
-          <a href="#" className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-[#255845]">
-            <FaFacebookF />
+          <a href="#" className="flex h-12 w-12 items-center justify-center rounded-full bg-white">
+            <FaFacebookF className="text-xl text-[#255845]" />
           </a>
-          <a href="#" className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-[#255845]">
-            <FaXTwitter />
+          <a href="#" className="flex h-12 w-12 items-center justify-center rounded-full bg-white">
+            <FaXTwitter className="text-xl text-[#255845]" />
           </a>
         </div>
 
         <div className="mt-16 border-t border-white/10 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 text-sm text-white/70 md:flex-row">
             <p>© 2026 KeenKeeper. All rights reserved.</p>
-            <div className="flex items-center gap-8">
+            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
               <Link href="#">Privacy Policy</Link>
               <Link href="#">Terms of Service</Link>
               <Link href="#">Cookies</Link>

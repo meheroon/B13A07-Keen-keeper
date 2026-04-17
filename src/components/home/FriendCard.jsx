@@ -16,7 +16,7 @@ export default function FriendCard({ friend }) {
         className="h-20 w-20 rounded-full object-cover"
       />
 
-      <h3 className="mt-5 text-2xl font-bold text-slate-800 sm:text-[32px]">
+      <h3 className="mt-5 text-2xl font-bold leading-tight text-slate-800 sm:text-[32px]">
         {friend.name}
       </h3>
 
