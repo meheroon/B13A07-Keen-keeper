@@ -3,10 +3,10 @@
 KeenKeeper is a responsive friendship tracking web app that helps users stay connected with the people who matter most. Users can view friend profiles, log quick check-ins, review a full interaction timeline, and analyze communication habits through a pie chart.
 
 ## Live Link
-Add your deployed Vercel / Netlify link here.
+https://b13-a07-keen-keeper-beta.vercel.app/
 
 ## GitHub Repository
-Add your repository link here.
+https://github.com/meheroon/B13A07-Keen-keepe
 
 ## Technologies Used
 - Next.js
