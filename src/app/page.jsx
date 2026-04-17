@@ -1,30 +1,31 @@
 'use client';
 
+import { useMemo } from 'react';
 import Banner from '@/components/home/Banner';
 import FriendsGrid from '@/components/home/FriendsGrid';
 import SummaryCards from '@/components/home/SummaryCards';
 import LoadingSpinner from '@/components/shared/LoadingSpinner';
-import SectionTitle from '@/components/shared/SectionTitle';
 import useFriends from '@/hooks/useFriends';
 import { getSummaryStats } from '@/lib/analytics';
 
 export default function HomePage() {
   const { friends, loading } = useFriends();
-  const stats = getSummaryStats(friends);
+
+  const stats = useMemo(() => {
+    return getSummaryStats(friends || []);
+  }, [friends]);
 
   return (
-    <div className="container-width space-y-10 py-8 sm:py-10">
+    <div className="container-width py-8 sm:py-12">
       <Banner />
+
       <SummaryCards stats={stats} />
 
-      <section id="friends">
-        <SectionTitle
-          eyebrow="Your Circle"
-          title="Your Friends"
-          description="Every friendship card gives you a quick pulse on who needs attention, who is nearly due, and who is already on track."
-        />
+      <div className="my-8 border-t border-gray-200" />
 
-        {loading ? <LoadingSpinner /> : <FriendsGrid friends={friends} />}
+      <section>
+        <h2 className="mb-6 text-4xl font-bold text-slate-800">Your Friends</h2>
+        {loading ? <LoadingSpinner /> : <FriendsGrid friends={friends || []} />}
       </section>
     </div>
   );

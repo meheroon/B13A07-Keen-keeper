@@ -1,4 +1,4 @@
-export function getSummaryStats(friends) {
+export function getSummaryStats(friends = []) {
   const timeline =
     typeof window !== 'undefined'
       ? JSON.parse(localStorage.getItem('keenkeeper-timeline') || '[]')
@@ -17,7 +17,8 @@ export function getSummaryStats(friends) {
     total: friends.length,
     onTrack: friends.filter((friend) => friend.status === 'on-track').length,
     needAttention: friends.filter(
-      (friend) => friend.status === 'overdue' || friend.status === 'almost due'
+      (friend) =>
+        friend.status === 'overdue' || friend.status === 'almost due'
     ).length,
     interactionsThisMonth
   };

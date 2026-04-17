@@ -1,20 +1,18 @@
-import { FaPen } from 'react-icons/fa6';
-
 export default function RelationshipGoalCard({ friend }) {
   return (
-    <section className="card-surface p-6">
-      <div className="flex items-center justify-between gap-4">
+    <section className="card-surface p-6 sm:p-8">
+      <div className="flex items-start justify-between gap-4">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-600">Relationship Goal</p>
-          <h3 className="mt-2 text-2xl font-black tracking-tight text-slate-950">Stay connected every {friend.goal} days</h3>
+          <h3 className="text-2xl font-semibold text-[#255845] sm:text-3xl">Relationship Goal</h3>
+          <p className="mt-6 text-lg text-slate-500 sm:text-2xl">
+            Connect every <span className="font-bold text-slate-800">{friend.goal} days</span>
+          </p>
         </div>
-        <button className="inline-flex items-center gap-2 rounded-full bg-violet-100 px-4 py-2 text-sm font-bold text-violet-700 transition hover:bg-violet-200">
-          <FaPen /> Edit
+
+        <button className="rounded-md border border-gray-200 bg-gray-50 px-5 py-3 text-base font-medium text-slate-700 sm:text-lg">
+          Edit
         </button>
       </div>
-      <p className="mt-4 text-sm leading-7 text-slate-600">
-        Keep this friendship healthy by checking in before the next due date. Small conversations count and consistency matters.
-      </p>
     </section>
   );
 }

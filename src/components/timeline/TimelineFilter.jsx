@@ -1,24 +1,18 @@
-import { cn } from '@/lib/utils';
-
-const filters = ['all', 'call', 'text', 'video'];
+'use client';
 
 export default function TimelineFilter({ activeFilter, onChange }) {
   return (
-    <div className="mb-8 flex flex-wrap gap-3">
-      {filters.map((filter) => (
-        <button
-          key={filter}
-          onClick={() => onChange(filter)}
-          className={cn(
-            'rounded-full px-5 py-2 text-sm font-bold capitalize transition',
-            activeFilter === filter
-              ? 'bg-violet-600 text-white shadow-md'
-              : 'bg-white text-slate-700 ring-1 ring-slate-200 hover:bg-slate-50'
-          )}
-        >
-          {filter}
-        </button>
-      ))}
+    <div className="mb-6 max-w-xs">
+      <select
+        value={activeFilter}
+        onChange={(e) => onChange(e.target.value)}
+        className="w-full rounded-md border border-gray-200 bg-white px-4 py-4 text-base text-slate-500 outline-none"
+      >
+        <option value="all">Filter timeline</option>
+        <option value="call">Call</option>
+        <option value="text">Text</option>
+        <option value="video">Video</option>
+      </select>
     </div>
   );
 }

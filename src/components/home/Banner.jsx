@@ -1,6 +1,6 @@
 export default function Banner() {
   return (
-    <section className="py-10 text-center sm:py-14">
+    <section className="py-12 text-center sm:py-16">
       <h1 className="mx-auto max-w-4xl text-4xl font-extrabold leading-tight text-slate-800 sm:text-6xl">
         Friends to keep close in your life
       </h1>

@@ -1,9 +1,10 @@
-export default function SummaryCard({ label, value, helper }) {
+export default function SummaryCard({ label, value }) {
   return (
-    <div className="card-surface p-5">
-      <p className="text-sm font-semibold text-slate-500">{label}</p>
-      <h3 className="mt-3 text-3xl font-black tracking-tight text-slate-950">{value}</h3>
-      <p className="mt-2 text-sm text-slate-500">{helper}</p>
+    <div className="card-surface flex min-h-[140px] flex-col items-center justify-center px-6 py-8 text-center">
+      <h3 className="text-4xl font-extrabold text-[#255845] sm:text-5xl">
+        {value ?? 0}
+      </h3>
+      <p className="mt-4 text-lg text-slate-500 sm:text-2xl">{label}</p>
     </div>
   );
 }

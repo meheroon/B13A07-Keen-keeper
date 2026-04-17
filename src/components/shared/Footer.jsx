@@ -5,12 +5,12 @@ export default function Footer() {
   return (
     <footer className="mt-20 bg-[#255845] text-white">
       <div className="container-width py-20 text-center">
-        <h2 className="text-6xl font-extrabold tracking-tight">KeenKeeper</h2>
+        <h2 className="text-5xl font-extrabold tracking-tight sm:text-6xl">KeenKeeper</h2>
         <p className="mx-auto mt-6 max-w-3xl text-base text-white/80">
           Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.
         </p>
 
-        <h3 className="mt-10 text-3xl font-semibold">Social Links</h3>
+        <h3 className="mt-10 text-2xl font-semibold sm:text-3xl">Social Links</h3>
 
         <div className="mt-6 flex items-center justify-center gap-4">
           <a href="#" className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-[#255845]">

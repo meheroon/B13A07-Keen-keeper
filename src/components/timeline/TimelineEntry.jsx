@@ -11,16 +11,18 @@ export default function TimelineEntry({ entry }) {
   const Icon = iconMap[entry.type] || FaRegMessage;
 
   return (
-    <div className="relative pl-10">
-      <span className="absolute left-[17px] top-14 h-full w-px bg-slate-200" />
-      <span className="absolute left-0 top-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-violet-600 text-white shadow-md">
-        <Icon className="text-sm" />
-      </span>
+    <div className="card-surface flex items-center gap-5 px-5 py-5">
+      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 text-xl text-[#255845]">
+        <Icon />
+      </div>
 
-      <div className="card-surface p-5">
-        <p className="text-xs font-bold uppercase tracking-[0.2em] text-violet-600">{entry.type}</p>
-        <h3 className="mt-2 text-xl font-black tracking-tight text-slate-950">{entry.title}</h3>
-        <p className="mt-3 text-sm text-slate-500">{formatDateTime(entry.date)}</p>
+      <div>
+        <h3 className="text-xl font-semibold text-[#255845]">
+          {entry.type.charAt(0).toUpperCase() + entry.type.slice(1)}{' '}
+          <span className="font-normal text-slate-500">with {entry.friendName}</span>
+        </h3>
+
+        <p className="mt-1 text-base text-slate-500">{formatDate(entry.date)}</p>
       </div>
     </div>
   );

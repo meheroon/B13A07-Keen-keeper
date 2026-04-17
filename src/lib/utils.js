@@ -16,7 +16,7 @@ export function getStatusStyles(status) {
 export function formatDate(dateString) {
   return new Date(dateString).toLocaleDateString('en-US', {
     year: 'numeric',
-    month: 'short',
+    month: 'long',
     day: 'numeric'
   });
 }
