@@ -6,7 +6,7 @@ KeenKeeper is a responsive friendship tracking web app that helps users stay con
 https://b13-a07-keen-keeper-beta.vercel.app/
 
 ## GitHub Repository
-https://github.com/meheroon/B13A07-Keen-keepe
+https://github.com/meheroon/B13A07-Keen-keeper
 
 ## Technologies Used
 - Next.js
