@@ -18,11 +18,7 @@ export default function SummaryCards({ stats }) {
   return (
     <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
       {cards.map((card) => (
-        <SummaryCard
-          key={card.label}
-          label={card.label}
-          value={card.value}
-        />
+        <SummaryCard key={card.label} label={card.label} value={card.value} />
       ))}
     </div>
   );

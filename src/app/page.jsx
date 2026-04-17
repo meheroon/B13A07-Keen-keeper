@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo } from 'react';
+import { useEffect, useState } from 'react';
 import Banner from '@/components/home/Banner';
 import FriendsGrid from '@/components/home/FriendsGrid';
 import SummaryCards from '@/components/home/SummaryCards';
@@ -11,8 +11,15 @@ import { getSummaryStats } from '@/lib/analytics';
 export default function HomePage() {
   const { friends, loading } = useFriends();
 
-  const stats = useMemo(() => {
-    return getSummaryStats(friends || []);
+  const [stats, setStats] = useState({
+    total: 0,
+    onTrack: 0,
+    needAttention: 0,
+    interactionsThisMonth: 0
+  });
+
+  useEffect(() => {
+    setStats(getSummaryStats(friends || []));
   }, [friends]);
 
   return (
