@@ -6,7 +6,7 @@ const COLORS = ['#7c3aed', '#255845', '#41b36d'];
 
 export default function AnalyticsChart({ data }) {
   return (
-    <div className="card-surface p-8">
+    <div className="card-surface p-4 sm:p-8">
       <h3 className="mb-8 text-2xl font-semibold text-[#255845] sm:text-3xl">By Interaction Type</h3>
 
       <div className="h-[340px] w-full">

@@ -15,7 +15,9 @@ export default function TimelinePage() {
 
   return (
     <div className="container-width py-10">
-      <h1 className="page-heading mb-8">Timeline</h1>
+      <h1 className="mb-8 text-4xl font-extrabold leading-tight text-slate-800 sm:text-[44px]">
+        Timeline
+      </h1>
       <TimelineFilter activeFilter={filter} onChange={setFilter} />
       <TimelineList entries={entries} />
     </div>

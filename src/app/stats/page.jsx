@@ -22,7 +22,9 @@ export default function StatsPage() {
 
   return (
     <div className="container-width py-10">
-      <h1 className="page-heading mb-8">Friendship Analytics</h1>
+      <h1 className="mb-8 text-4xl font-extrabold leading-tight text-slate-800 sm:text-[44px]">
+        Friendship Analytics
+      </h1>
       <AnalyticsChart data={chartData} />
     </div>
   );

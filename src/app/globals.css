@@ -42,10 +42,16 @@ img {
   max-width: 1152px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
+@media (min-width: 640px) {
+  .container-width {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
 .card-surface {
   background: white;
   border: 1px solid #e5e7eb;

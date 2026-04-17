@@ -6,7 +6,7 @@ export default function FriendCard({ friend }) {
   return (
     <Link
       href={`/friends/${friend.id}`}
-      className="card-surface flex min-h-[250px] flex-col items-center px-6 py-7 text-center transition hover:-translate-y-1 hover:shadow-md"
+      className="card-surface flex min-h-[260px] flex-col items-center px-6 py-7 text-center transition hover:-translate-y-1 hover:shadow-md"
     >
       <Image
         src={friend.picture}
@@ -16,15 +16,17 @@ export default function FriendCard({ friend }) {
         className="h-20 w-20 rounded-full object-cover"
       />
 
-      <h3 className="mt-5 text-2xl font-bold leading-tight text-slate-800 sm:text-[32px]">
-        {friend.name}
-      </h3>
+      <div className="mt-5 flex min-h-[92px] flex-col items-center">
+        <h3 className="text-2xl font-bold leading-tight text-slate-800 sm:text-[32px]">
+          {friend.name}
+        </h3>
 
-      <p className="mt-2 text-sm text-slate-400 sm:text-base">
-        {friend.days_since_contact}d ago
-      </p>
+        <p className="mt-2 text-sm text-slate-400 sm:text-base">
+          {friend.days_since_contact}d ago
+        </p>
+      </div>
 
-      <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
+      <div className="mt-2 flex min-h-[40px] flex-wrap items-center justify-center gap-2">
         {friend.tags.map((tag) => (
           <span
             key={tag}
@@ -35,9 +37,9 @@ export default function FriendCard({ friend }) {
         ))}
       </div>
 
-      <div className="mt-auto pt-6">
+      <div className="mt-4 flex min-h-[36px] items-center">
         <span
-          className={`inline-flex rounded-full border px-3 py-1 text-xs font-semibold capitalize sm:text-sm ${getStatusStyles(friend.status)}`}
+          className={`rounded-full border px-3 py-1 text-xs font-semibold capitalize sm:text-sm ${getStatusStyles(friend.status)}`}
         >
           {friend.status === 'on-track'
             ? 'On-Track'
