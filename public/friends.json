@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Ariana Rahman",
+    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80",
+    "email": "ariana.rahman@example.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "We met in university and still catch up on books, life plans, and random weekend café ideas.",
+    "goal": 14,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 2,
+    "name": "Nafis Chowdhury",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80",
+    "email": "nafis.c@example.com",
+    "days_since_contact": 6,
+    "status": "on-track",
+    "tags": ["work", "gym buddy"],
+    "bio": "A former teammate who now joins me for workouts and occasional goal-setting check-ins.",
+    "goal": 10,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 3,
+    "name": "Samia Haque",
+    "picture": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=900&q=80",
+    "email": "samia.haque@example.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["school", "travel"],
+    "bio": "A school friend who loves planning short trips, trying new food spots, and sharing travel reels.",
+    "goal": 12,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 4,
+    "name": "Tanzim Hasan",
+    "picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=900&q=80",
+    "email": "tanzim.hasan@example.com",
+    "days_since_contact": 21,
+    "status": "overdue",
+    "tags": ["football", "neighbor"],
+    "bio": "My old neighborhood friend. We usually reconnect over football matches and late evening tea.",
+    "goal": 14,
+    "next_due_date": "2026-04-08"
+  },
+  {
+    "id": 5,
+    "name": "Maliha Islam",
+    "picture": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=900&q=80",
+    "email": "maliha.islam@example.com",
+    "days_since_contact": 4,
+    "status": "on-track",
+    "tags": ["family friend", "design"],
+    "bio": "We often exchange design ideas, family updates, and short voice notes during the week.",
+    "goal": 9,
+    "next_due_date": "2026-04-21"
+  },
+  {
+    "id": 6,
+    "name": "Raiyan Ahmed",
+    "picture": "https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=900&q=80",
+    "email": "raiyan.ahmed@example.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["startup", "mentor"],
+    "bio": "A startup-minded friend I reach out to when I need sharp advice, perspective, and motivation.",
+    "goal": 10,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 7,
+    "name": "Farzana Noor",
+    "picture": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=900&q=80",
+    "email": "farzana.noor@example.com",
+    "days_since_contact": 15,
+    "status": "overdue",
+    "tags": ["volunteer", "community"],
+    "bio": "We met through volunteer work and still share updates about community events and personal goals.",
+    "goal": 12,
+    "next_due_date": "2026-04-11"
+  },
+  {
+    "id": 8,
+    "name": "Imran Kabir",
+    "picture": "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?auto=format&fit=crop&w=900&q=80",
+    "email": "imran.kabir@example.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["gaming", "remote friend"],
+    "bio": "A long-distance friend I usually catch online for gaming sessions and quick life updates.",
+    "goal": 11,
+    "next_due_date": "2026-04-19"
+  }
+]
